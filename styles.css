@@ -1,0 +1,371 @@
+body{
+    background-color: rgb(31, 31, 73);
+    margin: auto;
+}
+
+
+
+.remote{
+    height: 32rem;
+    width: 14rem;
+    background-color: hsl(0, 0%, 70%);
+    border: 2px solid black;
+    /* margin-top: 2rem;
+    margin-left: 2.5rem; */
+    top: 15%;
+    left: 40%;
+    border-radius: 20px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.remote__body{
+    background-color: grey;
+    position: relative;
+    height: 26rem;
+    margin: 1%;
+    border-radius: 20px;
+}
+
+.remote__face{
+    position: absolute;
+    background-color: rgb(87, 84, 84);
+    height: 30%;
+    width: 80%;
+    margin: 1.5rem 0 0 1.3rem;
+    border-radius: 10px;
+}
+
+.remote__light{
+    position: absolute;
+    background-color: rgb(116, 116, 85);
+    height: 80%;
+    width: 90%;
+    margin-top: 7%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+.remote__light p{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+#degrees{
+    background: none;
+    border: none;
+    padding: 26%;
+    font-size: large;
+}
+
+.hisense{
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 8%;
+    margin-left: 25%;
+    position: absolute;
+}
+
+.power{
+    background-color: hsl(0, 0%, 15%);
+    position: absolute;
+    width: 30%;
+    height: 11%;
+    margin-top: 75%;
+    margin-left: 1.7rem;
+    padding-top: .3rem;
+}
+
+.power p{
+    color: white;
+    margin: auto;
+    margin-left: .25rem;
+    font-size: medium;
+    padding-left: 2%;
+}
+
+.power__button{
+    position: relative;
+    margin-top: 1%;
+    background-color: yellow;
+    padding: 0.1rem 1.2rem;
+    margin-left: .3rem;
+    border-color: yellow;
+    border-radius: 50px;
+    color: rgb(185, 185, 28);
+    cursor: pointer;
+}
+
+.power__button:hover{
+    color: hsl(60, 74%, 32%);
+}
+
+/* to add the classList to the remote light when the power button is clicked*/
+.power-on{
+    background-color: yellowgreen;
+}
+
+.box{
+    position: absolute;
+    padding: 3rem 1.2rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: 75%;
+    margin-left: 67%;
+    border-radius: 20px;
+}
+
+.temp__incr{
+    margin-left: -13px;
+    margin-top: -42px;
+    position: absolute;
+    background-color: rgb(40, 148, 40);
+    padding: 0.5rem .25rem;
+    border: 2px solid green;
+    border-radius: 50px 50px 0 0px;
+    cursor: pointer;
+}
+
+.temp__decr{
+    margin-left: -13px;
+    margin-top: 7px;
+    position: absolute;
+    background-color: rgb(40, 148, 40);
+    padding: 0.5rem .25rem;
+    border:2px solid green;;
+    border-radius: 0px 0px 50px 50px;
+    cursor: pointer;
+}
+
+.mode p{
+    position: absolute;
+    margin-top: 115%;
+    margin-left: 15%;
+    font-size: 11px;
+}
+
+.mode-btn{
+    margin-left: 13%;
+    margin-top: 107%;
+    position: absolute;
+    background-color: rgb(40, 148, 40);
+    padding: 0.4rem 1.2rem;
+    border:2px solid green;;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.fan p{
+    position: absolute;
+    margin-top: 115%;
+    margin-left: 45%;
+    font-size: 11px;
+}
+
+.fan-btn{
+    margin-left: 40%;
+    margin-top: 107%;
+    position: absolute;
+    background-color: rgb(40, 148, 40);
+    padding: 0.4rem 1.2rem;
+    border:2px solid green;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.swing p{
+    position: absolute;
+    margin-top: 132%;
+    margin-left: 14%;
+    font-size: 11px;
+}
+
+.swing-btn{
+    margin-left: 13%;
+    margin-top: 124%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.sleep p{
+    position: absolute;
+    margin-top: 132%;
+    margin-left: 42%;
+    font-size: 11px;
+}
+
+.sleep-btn{
+    margin-left: 40%;
+    margin-top: 124%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.super p{
+    position: absolute;
+    margin-top: 132%;
+    margin-left: 69%;
+    font-size: 11px;
+}
+
+.super-btn{
+    margin-left: 67%;
+    margin-top: 124%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.smart p{
+    position: absolute;
+    margin-top: 149%;
+    margin-left: 14%;
+    font-size: 11px;
+}
+
+.smart-btn{
+    margin-left: 13%;
+    margin-top: 141%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.ifeel p{
+    position: absolute;
+    margin-top: 149%;
+    margin-left: 42%;
+    font-size: 11px;
+}
+
+.ifeel-btn{
+    margin-left: 40%;
+    margin-top: 141%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.dimmer p{
+    position: absolute;
+    margin-top: 149%;
+    margin-left: 67%;
+    font-size: 11px;
+}
+
+.dimmer-btn{
+    margin-left: 67%;
+    margin-top: 141%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.timer-on p{
+    position: absolute;
+    margin-top: 166%;
+    margin-left: 12%;
+    font-size: 11px;
+}
+
+.timer-on-btn{
+    margin-left: 13%;
+    margin-top: 158%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.timer-off p{
+    position: absolute;
+    margin-top: 166%;
+    margin-left: 39%;
+    font-size: 11px;
+}
+
+.timer-off-btn{
+    margin-left: 40%;
+    margin-top: 158%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.clock p{
+    position: absolute;
+    margin-top: 166%;
+    margin-left: 69%;
+    font-size: 11px;
+}
+
+.clock-btn{
+    margin-left: 67%;
+    margin-top: 158%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.empty-1-btn{
+    margin-left: 13%;
+    margin-top: 175%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.empty-2-btn{
+    margin-left: 40%;
+    margin-top: 175%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.empty-3-btn{
+    margin-left: 67%;
+    margin-top: 175%;
+    position: absolute;
+    background-color: hsl(0, 0%, 70%);
+    padding: 0.4rem 1.2rem;
+    border:2px solid hsl(0, 0%, 40%);
+    border-radius: 50px;
+    cursor: pointer;
+}
